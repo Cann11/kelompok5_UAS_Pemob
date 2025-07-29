@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Komunitas"
+            android:inputType="textCapWords"
+            android:minHeight="48dp"
+            android:importantForAutofill="yes"
+            android:autofillHints="name" />
+
+        <EditText
+            android:id="@+id/etDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi Komunitas"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:layout_marginTop="12dp"
+            android:importantForAutofill="yes"
+            android:autofillHints="description" />
+
+        <EditText
+            android:id="@+id/etKategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kategori"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_marginTop="12dp"
+            android:importantForAutofill="yes"
+            android:autofillHints="category" />
+
+        <EditText
+            android:id="@+id/etFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Link Foto Profil Komunitas"
+            android:inputType="textUri"
+            android:minHeight="48dp"
+            android:layout_marginTop="12dp"
+            android:importantForAutofill="yes"
+            android:autofillHints="username" />
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Komunitas"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>

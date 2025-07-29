@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalendarViewTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorAccent">@color/green_primary</item>
+    </style>
+
+    <style name="ProfileButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:backgroundTint">@color/gray</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+</resources>

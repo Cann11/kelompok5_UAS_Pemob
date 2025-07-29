@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green_primary">#388E3C</color> <!-- hijau utama -->
+    <color name="light_green">#90EE90</color>
+    <color name="gray_dark">#D0CECE</color>
+    <color name="gray_light">#F5F5F5</color><!-- untuk ikon/menu tidak aktif -->
+    <color name="green_soft">#A5D6A7</color> <!-- Hijau pastel -->
+    <color name="gray">#777777</color>
+</resources>

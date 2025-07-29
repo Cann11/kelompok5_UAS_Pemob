@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">TaniCerdas</string>
+    <string name="menu_home">Beranda</string>
+    <string name="menu_education">Edukasi</string>
+    <string name="menu_marketplace">Pasar</string>
+    <string name="menu_consultation">Konsultasi</string>
+    <string name="menu_profile">Profil</string>
+    <string name="header_title">TANICERDAS</string>
+    <string name="header_subtitle">Pilihan tepat untuk petani masa kini</string>
+
+    <string name="menu_community">Komunitas</string>
+    <string name="menu_calendar">Kalender Tanam</string>
+    <string name="menu_check">Cek Tanaman</string>
+    <string name="menu_report">Rapor</string>
+
+    <string name="edukasi_tips">Edukasi &amp; Tips</string>
+    <string name="tips_title">Edukasi Membuat Persemaian</string>
+    <string name="tips_desc">Panduan lengkap menyemai tanaman secara efektif</string>
+
+    <string name="promo_title">Promo Produk Tani</string>
+    <string name="promo_1">Diskon 20% Pupuk Kompos</string>
+    <string name="promo_2">Panen Semangka Segar 10.000/kg</string>
+
+    <string name="splash_welcome">Hallo selamat datang</string>
+
+    <string name="default_web_client_id">966694384048-u3alv2ltgbnulqr31ejnoqojnle9ipqu.apps.googleusercontent.com</string>
+
+    <string name="register_title">Daftar Akun Baru</string>
+    <string name="hint_name">Nama Lengkap</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Kata Sandi</string>
+    <string name="btn_register">Daftar</string>
+    <string name="already_have_account">Sudah punya akun? Login</string>
+
+    <string name="forgot_password_title">Lupa Kata Sandi</string>
+    <string name="btn_reset_password">Kirim Link Reset</string>
+    <string name="back_to_login">Kembali ke Login</string>
+
+    <string name="icon_komunitas">Icon Komunitas</string>
+    <string name="komunitas_petani">Komunitas Petani</string>
+    <string name="tanya_ahli">Tanya Ahli</string>
+    <string name="hint_cari_topik">Cari topik atau pertanyaan...</string>
+    <string name="avatar_user">Avatar</string>
+    <string name="nama_user_dummy">Budi, Petani Padi</string>
+    <string name="waktu_post_dummy">2 jam yang lalu</string>
+    <string name="isi_post_dummy">Bagaimana cara mengatasi hama wereng saat musim hujan?</string>
+    <string name="komentari">Komentari</string>
+
+    <string name="edukasi_title">Edukasi</string>
+    <string name="search_hint">Cari topik edukasi...</string>
+    <string name="edukasi_card_1">Teknik Pemupukan Organik</string>
+    <string name="edukasi_card_2">Panduan Panen Cabai</string>
+
+    <!-- Kategori -->
+    <string name="kategori_benih">Benih</string>
+    <string name="kategori_pupuk">Pupuk</string>
+    <string name="kategori_pestisida">Pestisida</string>
+    <string name="kategori_peralatan">Peralatan</string>
+
+    <string name="market_title">Pasar Tani</string>
+    <string name="search_market_hint">Cari produk tani...</string>
+
+    <string name="product_sample_name">Nama Produk</string>
+    <string name="product_sample_price">Rp 0</string>
+
+    <string name="user_name">Nama Pengguna</string>
+    <string name="user_email">user@email.com</string>
+    <string name="menu_edit_profile">Edit Profil</string>
+    <string name="menu_riwayat">Riwayat Transaksi</string>
+    <string name="menu_buka_toko">Buka Toko</string>
+    <string name="menu_bantuan">Pusat Bantuan</string>
+    <string name="menu_logout">Keluar</string>
+    <string name="menu_favorit">Favorit\n</string>
+    <string name="status_kirim">Status\n</string>
+    <string name="status_bayar">Status Bayar</string>
+
+
+    <string name="back">Kembali</string>
+    <string name="search">Cari</string>
+    <string name="konsultasi_pertanian">Konsultasi Pertanian</string>
+    <string name="desc_konsultasi">Ceritakan keluhan Tumbuhan Anda, Ahli pertanian akan beri solusinya</string>
+
+    <string name="hint_nama_komunitas">Nama Komunitas</string>
+    <string name="hint_deskripsi">Deskripsi Komunitas</string>
+    <string name="hint_kategori">Kategori</string>
+    <string name="btn_simpan">Simpan Komunitas</string>
+    <string name="default_foto_url">https://example.com/default_group_photo.png</string>
+    <string name="hint_foto_profil">Link Foto Profil Komunitas</string>
+</resources>

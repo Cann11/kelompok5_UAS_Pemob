@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green">
+
+    <!-- Atas Daun -->
+    <ImageView
+        android:id="@+id/daunAtas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/daun_atas"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true" />
+
+    <!-- Logo TaniCerdas -->
+    <ImageView
+        android:id="@+id/logoTaniCerdas"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/app_name" />
+
+    <!-- Text bawah -->
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/splash_welcome"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_below="@id/logoTaniCerdas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Bawah Daun -->
+    <ImageView
+        android:id="@+id/daunBawah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/daun_bawah"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

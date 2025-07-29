@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "966694384048",
+    "project_id": "tanicerdas-d403d",
+    "storage_bucket": "tanicerdas-d403d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966694384048:android:a67040c081d86648a2e675",
+        "android_client_info": {
+          "package_name": "com.tanicerdas.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966694384048-5357c404ua4ne6o1gukmifdnuar013pn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tanicerdas.app",
+            "certificate_hash": "929a32633d87a7325a59b2fdab27a94b376d1b93"
+          }
+        },
+        {
+          "client_id": "966694384048-u3alv2ltgbnulqr31ejnoqojnle9ipqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyAPBotrslo7X-dAeq7RYIU83PxcGAeoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966694384048-u3alv2ltgbnulqr31ejnoqojnle9ipqu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

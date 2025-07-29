@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/nav_education"
+        android:icon="@drawable/ic_edukasi"
+        android:title="@string/menu_education" />
+    <item
+        android:id="@+id/nav_marketplace"
+        android:icon="@drawable/ic_pasar"
+        android:title="@string/menu_marketplace" />
+    <item
+        android:id="@+id/nav_consultation"
+        android:icon="@drawable/ic_konsultasi"
+        android:title="@string/menu_consultation" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profil"
+        android:title="@string/menu_profile" />
+</menu>
