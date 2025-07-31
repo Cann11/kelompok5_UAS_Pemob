@@ -1,45 +1,57 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:background="#FFFFFF"
+    android:padding="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Gambar Header Edukasi -->
         <ImageView
             android:id="@+id/imgEdukasi"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="220dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_menu_gallery"
-            android:contentDescription="Gambar Edukasi" />
+            android:background="@drawable/bg_rounded"
+            android:clipToOutline="true"
+            android:contentDescription="Gambar Edukasi"
+            android:layout_marginBottom="16dp"
+            android:transitionName="imageTransition"
+            />
 
+        <!-- Judul -->
         <TextView
             android:id="@+id/tvJudul"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Judul Edukasi"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:textStyle="bold"
-            android:layout_marginTop="12dp" />
+            android:textColor="#222222"
+            android:layout_marginBottom="8dp" />
 
+        <!-- Kategori -->
         <TextView
             android:id="@+id/tvKategori"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kategori"
+            android:text="Kategori: Tanaman"
             android:textSize="14sp"
-            android:textColor="@android:color/darker_gray"
-            android:layout_marginTop="4dp" />
+            android:textColor="#757575"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Isi Konten -->
         <TextView
             android:id="@+id/tvIsi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Isi lengkap edukasi akan ditampilkan di sini."
+            android:text="Ini adalah isi lengkap dari materi edukasi yang memberikan informasi penting tentang perawatan tanaman. Penjelasan ini dapat mencakup tips, langkah-langkah, serta informasi umum atau teknis lainnya yang relevan."
             android:textSize="16sp"
-            android:layout_marginTop="16dp" />
+            android:textColor="#444444"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="24dp" />
     </LinearLayout>
 </ScrollView>

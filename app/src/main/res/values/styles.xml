@@ -15,4 +15,13 @@
         <item name="android:textAlignment">viewStart</item>
     </style>
 
+    <style name="BottomNavLabelActive" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">14sp</item> <!-- Bisa diperbesar -->
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BottomNavLabelInactive" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+    </style>
+
 </resources>

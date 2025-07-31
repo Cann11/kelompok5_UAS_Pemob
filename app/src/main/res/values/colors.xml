@@ -8,4 +8,8 @@
     <color name="gray_light">#F5F5F5</color><!-- untuk ikon/menu tidak aktif -->
     <color name="green_soft">#A5D6A7</color> <!-- Hijau pastel -->
     <color name="gray">#777777</color>
+    <color name="holo_green_dark">#388E3C</color>
+    <color name="holo_orange_dark">#F57C00</color>
+    <color name="holo_red_dark">#D32F2F</color>
+
 </resources>

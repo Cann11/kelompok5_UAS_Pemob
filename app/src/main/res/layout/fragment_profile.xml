@@ -17,7 +17,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/ic_user"
-            android:background="@drawable/bg_circle_green"
+            android:background="@drawable/bg_circle_white"
             android:scaleType="centerCrop"
             android:padding="8dp"
             android:elevation="4dp"
@@ -188,7 +188,9 @@
                     android:src="@drawable/ic_daftar_penjual"
                     android:backgroundTint="@color/green_primary"  />
 
+
                 <TextView
+                    android:id="@+id/tv_menu_penjual"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Daftar Sebagai Penjual"

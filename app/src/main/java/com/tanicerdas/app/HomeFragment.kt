@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.tanicerdas.app.R
 
@@ -22,6 +23,8 @@ class HomeFragment : Fragment() {
         val btnKomunitas = view.findViewById<LinearLayout>(R.id.btnKomunitas)
         val btnEdukasi = view.findViewById<LinearLayout>(R.id.btnEdukasi)
         val btnPasar = view.findViewById<LinearLayout>(R.id.btnPasar)
+        val btnCekTanaman = view.findViewById<LinearLayout>(R.id.btnCekTanaman)
+        val btnRapor = view.findViewById<LinearLayout>(R.id.btnRapor)
         btnKalender.setOnClickListener {
             // Navigasi ke KalenderFragment
             requireActivity().supportFragmentManager.beginTransaction()
@@ -52,6 +55,14 @@ class HomeFragment : Fragment() {
                 .replace(R.id.fragment_container, MarketplaceFragment())
                 .addToBackStack(null)
                 .commit()
+        }
+
+        btnCekTanaman.setOnClickListener {
+            Toast.makeText(requireContext(), "Fitur Cek Tanaman Comingsoon", Toast.LENGTH_SHORT).show()
+        }
+
+        btnRapor.setOnClickListener {
+            Toast.makeText(requireContext(), "Fitur Rapor Comingsoon", Toast.LENGTH_SHORT).show()
         }
 
         return view

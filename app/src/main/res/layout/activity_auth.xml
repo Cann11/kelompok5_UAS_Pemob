@@ -10,35 +10,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="48dp"
+        android:paddingBottom="36dp">
 
         <!-- Logo -->
         <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:src="@drawable/logo"
-            android:layout_marginTop="48dp"
-            android:contentDescription="@string/app_name" />
+            android:contentDescription="@string/app_name"
+            android:layout_marginBottom="16dp" />
 
         <!-- Judul -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Selamat Datang di TaniCerdas"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/green_primary"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginBottom="32dp" />
 
-        <!-- Email Input -->
+        <!-- Email -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
             app:boxStrokeColor="@color/green_primary"
-            app:boxBackgroundMode="outline">
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            android:layout_marginBottom="12dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_email"
@@ -48,13 +53,17 @@
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Password Input -->
+        <!-- Password -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
             app:boxStrokeColor="@color/green_primary"
-            app:boxBackgroundMode="outline">
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            android:layout_marginBottom="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_password"
@@ -72,38 +81,49 @@
             android:text="Masuk"
             android:backgroundTint="@color/green_primary"
             android:textColor="@android:color/white"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp" />
+            android:textAllCaps="false"
+            android:layout_marginBottom="16dp"
+            android:paddingVertical="10dp" />
 
-        <!-- Google Sign-In Button -->
-        <Button
-            android:id="@+id/btn_google_signin"
-            android:layout_width="match_parent"
+        <!-- Divider Text -->
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Masuk dengan Google"
-            android:backgroundTint="@color/green_soft"
-            android:textColor="@android:color/white"
-            android:drawableLeft="@drawable/logo_google"
-            android:padding="8dp"
-            android:layout_marginBottom="16dp" />
+            android:text="Atau"
+            android:textColor="#888888"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
 
-        <!-- Lupa Password -->
+        <!-- Google Sign-In Logo Only -->
+        <ImageButton
+            android:id="@+id/btn_google_signin"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/logo_google"
+            android:background="@drawable/bg_circle_white"
+            android:scaleType="centerInside"
+            android:contentDescription="Masuk dengan Google"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp" />
+
+        <!-- Forgot Password -->
         <TextView
             android:id="@+id/tv_forgot_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lupa Password?"
             android:textColor="@color/green_primary"
+            android:textSize="14sp"
             android:layout_marginBottom="8dp" />
 
-        <!-- Daftar -->
+        <!-- Register -->
         <TextView
             android:id="@+id/tv_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Belum punya akun? Daftar"
             android:textColor="@color/green_primary"
-            android:layout_marginBottom="48dp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 </ScrollView>

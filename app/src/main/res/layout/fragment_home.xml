@@ -116,6 +116,7 @@
 
             <!-- Cek Tanaman -->
             <LinearLayout
+                android:id="@+id/btnCekTanaman"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -172,6 +173,7 @@
 
             <!-- Rapor -->
             <LinearLayout
+                android:id="@+id/btnRapor"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -245,6 +247,7 @@
                         android:textSize="14sp"
                         android:textColor="@android:color/black"
                         android:layout_marginTop="4dp"/>
+
                 </LinearLayout>
 
                 <ImageView

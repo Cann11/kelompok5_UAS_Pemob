@@ -3,13 +3,15 @@ package com.tanicerdas.app
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
-data class Product(val name: String, val price: String, val imageRes: Int)
-
-class ProductAdapter(private val productList: List<Product>) :
-    RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
+class ProductAdapter(
+    private val products: List<Product>,
+    private val onItemClick: (Product) -> Unit
+) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
     inner class ProductViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val imgProduct: ImageView = view.findViewById(R.id.img_product)
@@ -18,17 +20,25 @@ class ProductAdapter(private val productList: List<Product>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
-        val v = LayoutInflater.from(parent.context)
+        val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_product, parent, false)
-        return ProductViewHolder(v)
+        return ProductViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
-        val p = productList[position]
-        holder.imgProduct.setImageResource(p.imageRes)
-        holder.tvName.text = p.name
-        holder.tvPrice.text = p.price
+        val product = products[position]
+        holder.tvName.text = product.name
+        holder.tvPrice.text = "Rp${product.price}"
+
+        Glide.with(holder.itemView.context)
+            .load(product.imageUrl)
+            .placeholder(R.drawable.ic_menu_gallery)
+            .into(holder.imgProduct)
+
+        holder.itemView.setOnClickListener {
+            onItemClick(product)
+        }
     }
 
-    override fun getItemCount(): Int = productList.size
+    override fun getItemCount(): Int = products.size
 }

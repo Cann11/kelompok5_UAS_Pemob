@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp"
     android:background="@color/white">
 
     <LinearLayout
@@ -15,87 +14,95 @@
 
         <!-- Logo -->
         <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:id="@+id/logoApp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:src="@drawable/logo"
-            android:layout_marginTop="32dp"
-            android:contentDescription="@string/app_name" />
+            android:layout_marginBottom="16dp" />
 
-        <!-- Judul -->
+        <!-- Title -->
         <TextView
-            android:id="@+id/tv_register_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/register_title"
-            android:textSize="24sp"
+            android:text="Daftar Sebagai Penjual"
+            android:textColor="@color/black"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/green_primary"
-            android:layout_gravity="center_horizontal"
             android:layout_marginBottom="24dp" />
 
-        <!-- Input Nama -->
+        <!-- Input Nama Toko -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            app:startIconDrawable="@drawable/ic_person"> <!-- Icon nama -->
+            app:startIconDrawable="@drawable/ic_toko">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_name"
+                android:id="@+id/etStoreName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/hint_name"
-                android:inputType="textPersonName" />
+                android:hint="Nama Toko"
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Input Email -->
+        <!-- Input Lokasi -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            app:startIconDrawable="@drawable/ic_email"> <!-- Icon email -->
+            app:startIconDrawable="@drawable/ic_alamat">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_email"
+                android:id="@+id/etStoreLocation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/hint_email"
-                android:inputType="textEmailAddress" />
+                android:hint="Lokasi Toko"
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Input Password -->
+        <!-- Input Telepon -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:startIconDrawable="@drawable/ic_phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor Telepon"
+                android:inputType="phone"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input Bio -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            app:startIconDrawable="@drawable/unlock">
+            app:startIconDrawable="@drawable/ic_bio">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_password"
+                android:id="@+id/etBio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/hint_password"
-                android:inputType="textPassword" />
+                android:hint="Deskripsi/Bio"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Tombol Register -->
+        <!-- Tombol Daftar -->
         <Button
-            android:id="@+id/btn_register"
+            android:id="@+id/btnRegisterSeller"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn_register"
+            android:text="Daftar Sekarang"
+            android:textAllCaps="false"
             android:backgroundTint="@color/green_primary"
-            android:textColor="@android:color/white" />
-
-        <!-- Link ke Login -->
-        <TextView
-            android:id="@+id/tv_login_here"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/already_have_account"
-            android:textColor="@color/green_primary"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp" />
-
+            android:textColor="@color/white"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
     </LinearLayout>
 </ScrollView>

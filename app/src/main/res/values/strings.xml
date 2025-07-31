@@ -86,4 +86,6 @@
     <string name="btn_simpan">Simpan Komunitas</string>
     <string name="default_foto_url">https://example.com/default_group_photo.png</string>
     <string name="hint_foto_profil">Link Foto Profil Komunitas</string>
+
+    <string name="product_image_desc">Gambar Produk</string>
 </resources>

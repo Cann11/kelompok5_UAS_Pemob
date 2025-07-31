@@ -1,46 +1,54 @@
 package com.tanicerdas.app
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
-import android.widget.EditText
-import android.widget.Toast
+import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.firestore.FirebaseFirestore
 
 class MarketplaceFragment : Fragment() {
 
-    private lateinit var productRecyclerView: RecyclerView
-    private lateinit var searchField: EditText
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: ProductAdapter
+    private val productList = mutableListOf<Product>()
+    private val db = FirebaseFirestore.getInstance()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_marketplace, container, false)
+        recyclerView = view.findViewById(R.id.rv_products)
+        recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
 
-        searchField = view.findViewById(R.id.et_search_market)
-        productRecyclerView = view.findViewById(R.id.rv_products)
-
-        // Dummy data
-        val products = listOf(
-            Product("Pupuk Organik", "Rp 25.000", R.drawable.ic_pupuk1),
-            Product("Benih Cabai", "Rp 15.000", R.drawable.ic_benih),
-            Product("Alat Semprot", "Rp 75.000", R.drawable.ic_alat),
-            Product("Pestisida Nabati", "Rp 40.000", R.drawable.ic_pestisida),
-            Product("Tanah Subur", "Rp 20.000", R.drawable.ic_nyebor),
-            Product("Em4 Mikroba", "Rp 18.000", R.drawable.ic_farmer)
-        )
-
-        val adapter = ProductAdapter(products)
-        productRecyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
-        productRecyclerView.adapter = adapter
-
-        searchField.setOnEditorActionListener { _, _, _ ->
-            Toast.makeText(requireContext(), "Cari produk: ${searchField.text}", Toast.LENGTH_SHORT).show()
-            true
+        adapter = ProductAdapter(productList) { product ->
+            val intent = Intent(requireContext(), DetailProductActivity::class.java)
+            intent.putExtra("PRODUCT", product)
+            startActivity(intent)
         }
 
+        recyclerView.adapter = adapter
+        loadProductsFromFirebase()
         return view
+    }
+
+    private fun loadProductsFromFirebase() {
+        db.collection("products")
+            .get()
+            .addOnSuccessListener { result ->
+                productList.clear()
+                for (doc in result) {
+                    val product = doc.toObject(Product::class.java)
+                    productList.add(product)
+                }
+                adapter.notifyDataSetChanged()
+            }
+            .addOnFailureListener {
+                Toast.makeText(requireContext(), "Gagal mengambil data", Toast.LENGTH_SHORT).show()
+            }
     }
 }
